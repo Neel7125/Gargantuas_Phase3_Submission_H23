@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&family=Varela+Round&display=swap" rel="stylesheet">
+    <title>University Events</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .event-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .event {
+        background-color: white;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        height: 600px;
+        width: 1000px;
+      }
+
+      .event .imge {
+        min-width: 300px;
+        max-width: 300px;
+        height: 100%;
+        border-radius: 10px;
+        background-image: url("music.jpg");
+        background-size: cover;
+      }
+
+      .event:hover {
+        transform: scale(1.04);
+        box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+        transition: all 0.4s;
+    }
+      .cont {
+        position: relative;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      a {
+        display: inline-block;
+        background-color: #007bff;
+        color: white;
+        padding: 8px 15px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.2s;
+      }
+      .cont p {
+        overflow: auto;
+        margin: 20px;
+        font-weight: 200;
+      }
+      .cont a {
+        position: relative;
+        top: 60px;
+        padding-left: 40px;
+        padding-right: 40px;
+        border-radius: 20px;
+   
+      
+      }
+      .cont .x{
+        position: relative;
+        bottom: 30px;
+        padding: 30px;
+    }
+      a:hover {
+        background-color: #0056b3;
+        transform: scale(1.06);
+        transition: all 0.2s;
+    }
+
+      body {
+        background-color: black;
+        color: white;
+      }
+
+      h2 {
+        position: absolute;
+        top: 0;
+        left: 10px;
+        color: rgb(156, 46, 46);
+        font-size: 2.5rem;
+      }
+ .date{
+        font-size: 1.1rem;
+        font-weight: 600;
+ }
+ header{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Prompt', sans-serif;
+font-family: 'Varela Round', sans-serif;
+    text-align: center;
+ }
+    </style>
+  </head>
+  <body>
+    <hr>
+    <header>
+      <h1>---- University Events ----</h1>
+
+      
+    
+     
+    </header>
+ <hr>
+    <section class="event-list">
+      
+      <div class="event">
+        <div class="imge"></div>
+        <div class="cont">
+          <h2>Event Name</h2>
+        
+          <span class="x">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam qui
+            aspernatur ipsum tempora quisquam, saepe distinctio ad id, deleniti
+            nostrum autem explicabo neque error cumque et amet perferendis ullam
+            voluptas. Tenetur voluptatibus provident suscipit, deleniti officia
+            voluptas obcaecati inventore eos perspiciatis cum repellendus,
+            repudiandae quia nam fugiat ab nobis libero aut illum reiciendis
+            maxime dolore repellat. Cum totam tenetur distinctio! Odit, maxime
+            quibusdam ea voluptas optio maiores harum obcaecati placeat
+            perferenod
+            necessitatibus aliquam ea repellat debitis labore molestias, placeat
+            eveniet dolor, voluptatum et sit assumenda totam nostrum!
+            Consequatur, modi sequi! Aliquid, consequatur.
+          </span>
+
+          <p><span class="date">Date:</span> 
+            September 15-17, 2023</p>
+          <p><span class="date">Location:</span> Conference Center</p>
+          <p>
+            <span class="date">Description:</span> Explore the latest advancements in technology at our
+            international conference.
+          </p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdoj0hESbiWSR1OxjXdEJ2R88wZLjIl5YqxptuBDwHl7IuEhQ/viewform?usp=sf_link">Register Now</a>
+        </div>
+      </div>
+    
+      <div class="event">
+        <div class="imge"></div>
+        <div class="cont">
+          <h2>Event Name</h2>
+        
+          <span class="x">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam qui
+            aspernatur ipsum tempora quisquam, saepe distinctio ad id, deleniti
+            nostrum autem explicabo neque error cumque et amet perferendis ullam
+            voluptas. Tenetur voluptatibus provident suscipit, deleniti officia
+            voluptas obcaecati inventore eos perspiciatis cum repellendus,
+            repudiandae quia nam fugiat ab nobis libero aut illum reiciendis
+            maxime dolore repellat. Cum totam tenetur distinctio! Odit, maxime
+            quibusdam ea voluptas optio maiores harum obcaecati placeat
+            perferenod
+            necessitatibus aliquam ea repellat debitis labore molestias, placeat
+            eveniet dolor, voluptatum et sit assumenda totam nostrum!
+            Consequatur, modi sequi! Aliquid, consequatur.
+          </span>
+
+          <p><span class="date">Date:</span> 
+            September 15-17, 2023</p>
+          <p><span class="date">Location:</span> Conference Center</p>
+          <p>
+            <span class="date">Description:</span> Explore the latest advancements in technology at our
+            international conference.
+          </p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdoj0hESbiWSR1OxjXdEJ2R88wZLjIl5YqxptuBDwHl7IuEhQ/viewform?usp=sf_link">Register Now</a>
+        </div>
+      </div>
+    
+      <div class="event">
+        <div class="imge"></div>
+        <div class="cont">
+          <h2>Event Name</h2>
+        
+          <span class="x">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam qui
+            aspernatur ipsum tempora quisquam, saepe distinctio ad id, deleniti
+            nostrum autem explicabo neque error cumque et amet perferendis ullam
+            voluptas. Tenetur voluptatibus provident suscipit, deleniti officia
+            voluptas obcaecati inventore eos perspiciatis cum repellendus,
+            repudiandae quia nam fugiat ab nobis libero aut illum reiciendis
+            maxime dolore repellat. Cum totam tenetur distinctio! Odit, maxime
+            quibusdam ea voluptas optio maiores harum obcaecati placeat
+            perferenod
+            necessitatibus aliquam ea repellat debitis labore molestias, placeat
+            eveniet dolor, voluptatum et sit assumenda totam nostrum!
+            Consequatur, modi sequi! Aliquid, consequatur.
+          </span>
+
+          <p><span class="date">Date:</span> 
+            September 15-17, 2023</p>
+          <p><span class="date">Location:</span> Conference Center</p>
+          <p>
+            <span class="date">Description:</span> Explore the latest advancements in technology at our
+            international conference.
+          </p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdoj0hESbiWSR1OxjXdEJ2R88wZLjIl5YqxptuBDwHl7IuEhQ/viewform?usp=sf_link">Register Now</a>
+        </div>
+      </div>
+    
+      </div>
+      <!-- Add more event cards here -->
+    </section>
+  </body>
+</html>

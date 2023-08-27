@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .nevbar img {
+        width: 200px;
+      }
+      .nevbar {
+        
+        z-index: 12;
+        
+        background-color: #ffffff;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        position: fixed;
+
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .nevbar a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-size: 1rem;
+        font-family: 'Varela Round', sans-serif;
+      }
+      .at .button:hover {
+        background-color:#124d8c;
+       margin: 1px;
+        border: none;
+        color: rgb(255, 255, 255);
+        transition: all 0.2s;
+      }
+      
+      .at {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 150px;
+      }
+
+      .container {
+        width: fit-content;
+        height: 100vh;
+      
+        background-color: black;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.9;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .about {
+        width: 100vw;
+        height: 100vh;
+       
+        background-color: black;
+        background-size: cover;
+        display: flex;
+        
+      }
+      .tex {
+        width: 50%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+      }
+
+      #A {
+        margin-top: 150px;
+        font-size: 5rem;
+      }
+      #u {
+        font-size: 3rem;
+        margin-top: 178px;
+        margin-left: 12px;
+      }
+      .u {
+        font-size: 2rem;
+        margin-top: 178px;
+        margin-left: 12px;
+        color: white;
+      }
+
+      .temp p {
+        padding: 0;
+        margin: 0;
+        font-weight: bolder;
+      }
+
+      .temp {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 60px;
+        color: white;
+      }
+      .last {
+       
+        background-color: black;
+        width: 100%;
+        height: 300px;
+      }
+      .sos img {
+        border-radius: 100px;
+      }
+
+      .box {
+        height: 100%;
+        width: 24%;
+        gap: 12px;
+        padding: 0;
+     
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: white;
+        padding-top: 42px;
+        border-radius: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      .bcon {
+        
+        display: flex;
+        gap: 20px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding:  20px;
+        height: 500px;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+      }
+      .box1 {
+        margin: 0;
+        padding: 0px;
+        background-image: url("music.jpg");
+        background-size: cover;
+        position: relative;
+      }
+
+      .box2 {
+        padding: 0;
+        margin: 0;
+        background-image: url("dance.jpg");
+        background-size: cover;
+        position: relative;
+      }
+      .box3 {
+        padding: 0;
+        margin: 0;
+        background-image: url("Workshops.jpg");
+        background-size: cover;
+        position: relative;
+      }
+      .box4 {
+        padding: 0;
+        margin: 0;
+        background-image: url("sports.jpg");
+        background-size: cover;
+        position: relative;
+      }
+
+      .box1:hover {
+        transform: scale(1.05);
+        
+       
+        transition: linear;
+        transition-duration: 0.5s;
+       
+        
+      }
+
+      .box2:hover {
+        transform: scale(1.05);
+        transition: linear;
+        transition-duration: 0.5s;
+        
+      }
+
+      .box3:hover {
+        transform: scale(1.05);
+        transition: linear;
+        transition-duration: 0.5s;
+        
+      }
+
+      .box4:hover {
+        transform: scale(1.05);
+        transition: linear;
+        transition-duration: 0.5s;
+        
+      }
+
+     
+      .over{
+        padding: 0;
+       
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+        opacity: 0;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+
+      }
+     
+      .over:hover{
+        opacity: 1;
+        backdrop-filter: blur(3px);
+        
+        transition:all 0.8s ease-out;
+      }
+
+      
+      
+       .click{
+        
+        color: white;
+        background-color: black;
+        border-radius: 10px;
+        padding: 10px 20px;
+        cursor: pointer;
+        border: 0;
+      } 
+
+      .click a{
+        color: white;
+        text-decoration: none;
+      }
+.box span{
+  position: absolute;
+  bottom: 20px; 
+  left: 50%;
+  transform: translateX(-50%); 
+  color: azure;
+  font-size: 2rem;
+
+}
+
+.at .button{
+
+  background-color: white;
+ 
+  color: rgb(88, 88, 88);
+  border-radius: 20px;
+  padding: 7px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.at .button2:hover{
+  background-color: #124d87;
+  transition: all ;
+}
+.at .button2{
+
+
+  padding: 7px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 20px;
+    background-color:#052a51;
+    color: white;
+    margin-left: 60px;
+}
+   
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="nevbar">
+        <a href="https://edusakha.com/"> <img src="Screenshot 2023-08-26 012517.png" alt="" /></a>
+       
+        <div class="at"> 
+          <a href="#" class="button">Platform</a>
+          <a href="#" class="button">Solution</a>
+          <a href="https://edusakha.com/for-student" class="button">For Student</a>
+          <a href="https://edusakha.com/pricing" class="button">Pricing</a>
+           <a href="https://edusakha.com/" class="button">Resources</a>
+           <a href="https://edusakha.com/book-demo" class="button2">Book A Demo</a>
+          
+          
+          
+         
+          
+        </div>
+      </div>
+      <br /><br /><br /><br /><br /><br /><br />
+      <div class="bcon">
+        <div class="box1 box">
+         <span>MUSIC</span>
+          <div class="over">
+          <button class="click"><a href="subevents.html">Click here for more</a></button>
+        </div>
+        </div>
+        <div class="box2 box">
+          <span>DANCE</span>
+          <div class="over">
+            <button class="click"><a href="subevents.html">Click here for more</a></button>
+          </div>
+        </div>
+        <div class="box3 box">
+          <span>SEMINARS</span>
+          
+          <div class="over"><button class="click"><a href="subevents.html">Click here for more</a></button></div>
+        </div>
+        <div class="box4 box">
+          <span>SPORTS</span>
+          <div class="over"><button class="click"><a href="subevents.html">Click here for more</a></button></div>
+        </div>
+      </div>
+      </div>
+    </div>
+    
+
+    
+    </div>
+  </body>
+</html>
